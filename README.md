@@ -52,10 +52,24 @@ A estrutura básica do HTML é a seguinte:
 </body>
 </html>
 
+```
 
 
 # CSS 🎨
 O CSS define o estilo e layout dos elementos. Os estilos são aplicados a diferentes tipos de Pokémon, que possuem cores de fundo distintas.
+
+```css
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+/* Outros estilos para tipos de Pokémon */
+
+```
 
 # JavaScript 📜
 O JavaScript gerencia a lógica da aplicação, incluindo a obtenção de dados da PokeAPI e a atualização do DOM.
@@ -67,6 +81,7 @@ Principais Funcionalidades ⚙️
 Estrutura do Modelo 🧬
 
 A classe Pokemon é definida para representar cada Pokémon:
+```javascript
 class Pokemon {
     number;
     name;
@@ -74,7 +89,7 @@ class Pokemon {
     types = [];
     photo;
 }
-
+```
 
 # Instalação ⚙️
 Para executar a aplicação localmente, siga os seguintes passos:
