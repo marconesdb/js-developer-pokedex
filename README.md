@@ -1,11 +1,11 @@
-# Trilha JS Developer - Pokedex
-Pokedex Project 🗂️
+# Trilha JS Developer - Pokedex Project 🗂️
 
-Descrição 📝
+
+# Descrição 📝
 Este projeto é uma aplicação web chamada Pokedex, que utiliza a PokeAPI para exibir uma lista de Pokémon. A interface permite que os usuários visualizem informações sobre os Pokémon, como nome, número e tipos, além de carregar mais Pokémon ao clicar no botão "Load More" 🔽.
 
 
-Tecnologias Utilizadas 💻
+# Tecnologias Utilizadas 💻
 HTML: Estrutura da página.
 CSS: Estilo da aplicação, utilizando o Normalize.css para uma base consistente e a fonte Roboto para a tipografia.
 JavaScript: Manipulação da lógica da aplicação, incluindo chamadas à API e manipulação do DOM.
@@ -21,7 +21,7 @@ pokemon-model.js: Definição do modelo de dados Pokemon.
 poke-api.js: Interação com a PokeAPI para obter os dados dos Pokémon.
 main.js: Lógica principal da aplicação, incluindo a manipulação do DOM e a implementação da funcionalidade de carregamento.
 
-index.html 🌐
+# index.html 🌐
 A estrutura básica do HTML é a seguinte:
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -49,10 +49,10 @@ A estrutura básica do HTML é a seguinte:
 </html>
 
 
-CSS 🎨
+# CSS 🎨
 O CSS define o estilo e layout dos elementos. Os estilos são aplicados a diferentes tipos de Pokémon, que possuem cores de fundo distintas.
 
-JavaScript 📜
+# JavaScript 📜
 O JavaScript gerencia a lógica da aplicação, incluindo a obtenção de dados da PokeAPI e a atualização do DOM.
 
 Principais Funcionalidades ⚙️
@@ -71,7 +71,7 @@ class Pokemon {
 }
 
 
-Instalação ⚙️
+# Instalação ⚙️
 Para executar a aplicação localmente, siga os seguintes passos:
 
 1. Clone o repositório:
@@ -81,7 +81,7 @@ cd pokedex
 
 2. Abra o arquivo index.html em um navegador de sua escolha.
 
-Uso 🚀
+# Uso 🚀
 Visualizar Pokémon: A aplicação exibirá uma lista de Pokémon na página inicial.
 Carregar Mais Pokémon: Clique no botão "Load More" para carregar mais Pokémon.
 Contribuição 🤝
@@ -91,5 +91,5 @@ Licença 📄
 Este projeto é licenciado sob a Licença MIT.
 
 Contato 📫
-Para dúvidas ou sugestões, entre em contato através do e-mail: seu-email@dominio.com.
+Para dúvidas ou sugestões, entre em contato através do e-mail: marconebritt@gmail.com.
 
