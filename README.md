@@ -23,6 +23,10 @@ main.js: Lógica principal da aplicação, incluindo a manipulação do DOM e a 
 
 # index.html 🌐
 A estrutura básica do HTML é a seguinte:
+
+### Exemplo de Código HTML 📝
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -47,6 +51,7 @@ A estrutura básica do HTML é a seguinte:
     <!-- Links para JS -->
 </body>
 </html>
+
 
 
 # CSS 🎨
