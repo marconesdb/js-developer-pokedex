@@ -1,115 +1,64 @@
 # Trilha JS Developer - Pokedex Project 🗂️
 
 
-# Descrição 📝
-Este projeto é uma aplicação web chamada Pokedex, que utiliza a PokeAPI para exibir uma lista de Pokémon. A interface permite que os usuários visualizem informações sobre os Pokémon, como nome, número e tipos, além de carregar mais Pokémon ao clicar no botão "Load More" 🔽.
+# Pokedex 🐾
 
+Bem-vindo ao projeto Pokedex, uma aplicação para visualizar e interagir com uma lista de Pokémon. Este README documenta as melhorias e alterações feitas no código-fonte da aplicação.
 
-# Tecnologias Utilizadas 💻
-HTML: Estrutura da página.
-CSS: Estilo da aplicação, utilizando o Normalize.css para uma base consistente e a fonte Roboto para a tipografia.
-JavaScript: Manipulação da lógica da aplicação, incluindo chamadas à API e manipulação do DOM.
-PokeAPI: API externa utilizada para obter dados sobre os Pokémon.
-Estrutura do Projeto 📁
-Arquivos
-index.html: Arquivo principal que contém a estrutura da aplicação.
-/assets/css/: Pasta que contém os arquivos de estilo:
-global.css: Estilos globais da aplicação.
-pokedex.css: Estilos específicos para a Pokedex.
-/assets/js/: Pasta que contém os scripts da aplicação:
-pokemon-model.js: Definição do modelo de dados Pokemon.
-poke-api.js: Interação com a PokeAPI para obter os dados dos Pokémon.
-main.js: Lógica principal da aplicação, incluindo a manipulação do DOM e a implementação da funcionalidade de carregamento.
+## Alterações Realizadas 🛠️
 
-# index.html 🌐
-A estrutura básica do HTML é a seguinte:
+### 1. Estrutura HTML 📄
+- **Uso de Semântica:** 
+  - Adicionada uma `<header>` para o título da Pokedex, separando a estrutura de navegação do conteúdo principal.
+  - A seção principal foi envolvida em uma `<main>` para melhor estrutura semântica.
 
-### Exemplo de Código HTML 📝
+### 2. Estilos CSS 🎨
+- **Uso de Variáveis CSS:**
+  - Introduzidas variáveis CSS no `global.css` para facilitar a manutenção das cores.
+  
+- **Responsividade:**
+  - Apliquei estilos responsivos para diferentes tamanhos de tela, garantindo que a visualização da Pokedex seja otimizada em dispositivos móveis e desktop.
 
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    <!-- Links para CSS e fontes -->
-</head>
-<body>
-    <section class="content">
-        <h1>Pokedex</h1>
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
-        </ol>
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
-        </div>
-    </section>
-    <!-- Links para JS -->
-</body>
-</html>
+- **Organização e Manutenção:**
+  - Reorganização das classes para representar tipos de Pokémon no CSS, facilitando a manutenção e o entendimento do código.
 
-```
+### 3. JavaScript 🖥️
+- **Melhoria na Manipulação do DOM:**
+  - Alterei a função `convertPokemonToLi` para usar `document.createElement`, melhorando a manipulação do DOM e evitando injeção direta de HTML.
+  
+- **Tratamento de Erros:**
+  - Adicionei tratamento de erros nas requisições `fetch` para que o usuário seja informado em caso de falhas na API.
 
+- **Carregamento Lazy:**
+  - Implementada a propriedade `loading="lazy"` nas imagens dos Pokémon para melhorar a performance ao carregar a página.
 
-# CSS 🎨
-O CSS define o estilo e layout dos elementos. Os estilos são aplicados a diferentes tipos de Pokémon, que possuem cores de fundo distintas.
+### 4. Documentação 📚
+- **Comentarios no Código:**
+  - Adicionei comentários no código para descrever a funcionalidade e a lógica de seções específicas, melhorando a legibilidade e a manutenção.
 
-```css
-.normal {
-    background-color: #a6a877;
-}
+## Como Executar o Projeto 🚀
 
-.grass {
-    background-color: #77c850;
-}
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/marconesdb/js-developer-pokedex
+   ```
 
-/* Outros estilos para tipos de Pokémon */
+2. **Abra o arquivo `index.html` no seu navegador:**
+   ```bash
+   open index.html
+   ```
 
-```
+3. **Interaja com a aplicação:** Aprecie a Pokedex e explore os Pokémon disponíveis!
 
-# JavaScript 📜
-O JavaScript gerencia a lógica da aplicação, incluindo a obtenção de dados da PokeAPI e a atualização do DOM.
+## Contribuições 🤝
 
-Principais Funcionalidades ⚙️
-1.Conversão de Pokémon para Elemento de Lista: A função convertPokemonToLi cria elementos de lista para cada 2.Pokémon com suas informações.
-2.Carregamento de Pokémon: A função loadPokemonItens busca os Pokémon da API e atualiza a lista na página.
-3.Carregamento de mais Pokémon: Um botão "Load More" permite carregar mais Pokémon conforme o usuário clica.
-Estrutura do Modelo 🧬
+Se você deseja contribuir com melhorias ou correções, fique à vontade para abrir uma *issue* ou enviar um *pull request*. Sua colaboração é muito bem-vinda!
 
-A classe Pokemon é definida para representar cada Pokémon:
-```javascript
-class Pokemon {
-    number;
-    name;
-    type;
-    types = [];
-    photo;
-}
-```
+## Licença 📄
 
-# Instalação ⚙️
-Para executar a aplicação localmente, siga os seguintes passos:
+Este projeto é licenciado sob a [MIT License](LICENSE).
 
-1. Clone o repositório:
+## Contato 📧
 
-git clone <URL_DO_REPOSITORIO>
-cd pokedex
-
-2. Abra o arquivo index.html em um navegador de sua escolha.
-
-# Uso 🚀
-Visualizar Pokémon: A aplicação exibirá uma lista de Pokémon na página inicial.
-Carregar Mais Pokémon: Clique no botão "Load More" para carregar mais Pokémon.
-Contribuição 🤝
-Sinta-se à vontade para contribuir para este projeto. Você pode abrir um pull request ou relatar problemas.
-
-Licença 📄
-Este projeto é licenciado sob a Licença MIT.
-
-Contato 📫
-Para dúvidas ou sugestões, entre em contato através do e-mail: marconebritt@gmail.com.
-
+Para dúvidas ou sugestões, entre em contato:
+- Marcone Silva de Brito: marconebritt@gmail.com
