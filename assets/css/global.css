@@ -1,17 +1,25 @@
+/* global.css */
+:root {
+    --bg-color: #f6f8fc;
+    --primary-color: #6c79db;
+    --white: #fff;
+    --black: #000;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #f6f8fc;
+    background-color: var(--bg-color);
 }
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 @media screen and (min-width: 992px) {
